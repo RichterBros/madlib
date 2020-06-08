@@ -16,5 +16,6 @@ $(document).ready(function() {
       $(inputs[something]).text(madWord);  
       something = something + 1; 
     });
+    
   });
 });
