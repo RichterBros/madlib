@@ -11,17 +11,26 @@ $(document).ready(function() {
     const inputs= [".person1", ".person2", ".animal", ".exclamation", ".verb", ".noun"];
     const madWords =[person1Input, person2Input, animalInput, exclamationInput, verbInput, nounInput];
     
-    let i = i++;
-    madWords.forEach(function(madWord) {
-      $(inputs[i]).text(madWord);
-    });
-
-  
+    let something = 0;
+    madWords.forEach(function(madWord) { 
+      $(inputs[something]).text(madWord);  
+      something = something + 1; 
     });
   });
+});
 
-  // let var1;
-    // let var2;
+// madWords.forEach(function(madWord) {
+      
+//   $(inputs[i]).text(madWord);
+//   i++;
+// console.log(inputs)
+
+
+
+
+
+
+
   
 // const array = [0,1,2,3,4,5];
 // let doubledArray = [];
