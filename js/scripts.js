@@ -7,34 +7,46 @@ $(document).ready(function() {
     const exclamationInput = $("input#exclamation").val();
     const verbInput = $("input#verb").val();
     const nounInput = $("input#noun").val();
-
+    
     const inputs= [".person1", ".person2", ".animal", ".exclamation", ".verb", ".noun"];
     const madWords =[person1Input, person2Input, animalInput, exclamationInput, verbInput, nounInput];
-    let var1;
-    let var2;
-
-    inputs.forEach(function(input){
-      var1 = input;
-    });
     
+    let i = i++;
     madWords.forEach(function(madWord) {
-      var2= madWord;
+      $(inputs[i]).text(madWord);
     });
 
-    
-
-    $(var1).text(var2);
-
-    $("#story").show();
+  
+    });
   });
-});
+
+  // let var1;
+    // let var2;
+  
+// const array = [0,1,2,3,4,5];
+// let doubledArray = [];
+// array.forEach(function(element) {
+//   doubledArray.push(element * 2);
+// });
+// doubledArray;
+//
+// let newInputs = [];
+// inputs.forEach(function(input) {
+//    newInputs.push(input);
+// });
+// let newMadWords = [];
+// inputs.forEach(function(madWord) {
+//    newMadWords.push(madWords);
+//});
+//
+// $(newInputs).text(newMadWords);
+  
+// });
+
 // $(".person1").text(person1Input);
     // const inputs= [".person1", ".person2", ".animal", ".exclamation", ".verb", ".noun"];
     // const madWords =[person1Input, person2Input, animalInput, exclamationInput, verbInput, nounInput];
-    // let i = i++;
-    // madWords.forEach(function(madWord) {
-    //   $(inputs[i]).text(madWord);
-    // });
+  
 
     
     // $(".person1").text(person1Input);
@@ -43,3 +55,16 @@ $(document).ready(function() {
     // $(".exclamation").text(exclamationInput);
     // $(".verb").text(verbInput);
     // $(".noun").text(nounInput);
+
+    // let newInputs = [] 
+    // inputs.forEach(function(input){
+    //   newInputs.push(input);
+    // });
+
+    // console.log(newInputs)
+    // let newInputs2 = []
+    // madWords.forEach(function(madWord) {
+     
+    //   newInputs2.push(madWord);
+      
+    // console.log(newInputs2)  
